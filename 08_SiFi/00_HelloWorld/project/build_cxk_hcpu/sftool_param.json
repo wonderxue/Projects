@@ -1,0 +1,21 @@
+{
+  "chip": "SF32LB52",
+  "memory": "NAND",
+  "write_flash": {
+    "verify": true,
+    "files": [
+      {
+        "path": "bootloader/bootloader.bin",
+        "address": "0x62080000"
+      },
+      {
+        "path": "main.bin",
+        "address": "0x620A0000"
+      },
+      {
+        "path": "ftab/ftab.bin",
+        "address": "0x62000000"
+      }
+    ]
+  }
+}

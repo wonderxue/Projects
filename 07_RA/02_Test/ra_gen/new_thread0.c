@@ -1,0 +1,250 @@
+/* generated thread source file - do not edit */
+#include "new_thread0.h"
+
+#if 1
+                static StaticTask_t new_thread0_memory;
+                #if defined(__ARMCC_VERSION)           /* AC6 compiler */
+                static uint8_t new_thread0_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.thread") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+                #else
+                static uint8_t new_thread0_stack[1024] BSP_PLACE_IN_SECTION(BSP_UNINIT_SECTION_PREFIX ".stack.new_thread0") BSP_ALIGN_VARIABLE(BSP_STACK_ALIGNMENT);
+                #endif
+                #endif
+                TaskHandle_t new_thread0;
+                void new_thread0_create(void);
+                static void new_thread0_func(void * pvParameters);
+                void rtos_startup_err_callback(void * p_instance, void * p_data);
+                void rtos_startup_common_init(void);
+usb_instance_ctrl_t g_basic0_ctrl;
+
+#if !defined(g_usb_descriptor)
+extern usb_descriptor_t g_usb_descriptor;
+#endif
+#define RA_NOT_DEFINED (1)
+            const usb_cfg_t g_basic0_cfg =
+            {
+                .usb_mode  = USB_MODE_PERI,
+                .usb_speed = USB_SPEED_FS,
+                .module_number = 0,
+                .type = USB_CLASS_PCDC,
+#if defined(g_usb_descriptor)
+                .p_usb_reg = g_usb_descriptor,
+#else
+                .p_usb_reg = &g_usb_descriptor,
+#endif
+                .usb_complience_cb = NULL,
+#if defined(VECTOR_NUMBER_USBFS_INT)
+                .irq       = VECTOR_NUMBER_USBFS_INT,
+#else
+                .irq       = FSP_INVALID_VECTOR,
+#endif
+#if defined(VECTOR_NUMBER_USBFS_RESUME)
+                .irq_r     = VECTOR_NUMBER_USBFS_RESUME,
+#else
+                .irq_r     = FSP_INVALID_VECTOR,
+#endif
+                .irq_d0    = FSP_INVALID_VECTOR,
+                .irq_d1    = FSP_INVALID_VECTOR,
+                .hsirq     = FSP_INVALID_VECTOR,
+                .hsirq_d0  = FSP_INVALID_VECTOR,
+                .hsirq_d1  = FSP_INVALID_VECTOR,
+                .ipl       = (12),
+                .ipl_r     = (12),
+                .ipl_d0    = BSP_IRQ_DISABLED,
+                .ipl_d1    = BSP_IRQ_DISABLED,
+                .hsipl     = BSP_IRQ_DISABLED,
+                .hsipl_d0  = BSP_IRQ_DISABLED,
+                .hsipl_d1  = BSP_IRQ_DISABLED,
+#if (BSP_CFG_RTOS == 0) && defined(USB_CFG_HMSC_USE)
+                .p_usb_apl_callback = NULL,
+#else
+                .p_usb_apl_callback = NULL,
+#endif
+#if defined(NULL)
+                .p_context = NULL,
+#else
+                .p_context = (void *) &NULL,
+#endif
+            };
+#undef RA_NOT_DEFINED
+
+/* Instance structure to use this module. */
+const usb_instance_t g_basic0 =
+{
+    .p_ctrl        = &g_basic0_ctrl,
+    .p_cfg         = &g_basic0_cfg,
+    .p_api         = &g_usb_on_usb,
+};
+/* USB PCDC Communication Device */
+
+rm_comms_usb_pcdc_instance_ctrl_t g_comms_usb_pcdc0_ctrl;
+
+#if BSP_CFG_RTOS == 1 // ThreadX
+
+ #if !defined(g_comms_usb_pcdc0_tx_mutex)
+ rm_comms_mutex_t g_comms_usb_pcdc0_tx_mutex =
+ {
+     .p_name = "g_comms_usb_pcdc0 tx mutex",
+ };
+ #endif
+
+ #if !defined(g_comms_usb_pcdc0_rx_mutex)
+ rm_comms_mutex_t g_comms_usb_pcdc0_rx_mutex =
+ {
+     .p_name = "g_comms_usb_pcdc0 rx mutex",
+ };
+ #endif
+
+ #if !defined(g_comms_usb_pcdc0_tx_semaphore)
+ rm_comms_semaphore_t g_comms_usb_pcdc0_tx_semaphore =
+ {
+     .p_name = "g_comms_usb_pcdc0 tx semaphore",
+ };
+ #endif
+
+  #if !defined(g_comms_usb_pcdc0_rx_semaphore)
+ rm_comms_semaphore_t g_comms_usb_pcdc0_rx_semaphore =
+ {
+     .p_name = "g_comms_usb_pcdc0 rx semaphore",
+ };
+ #endif
+
+#elif BSP_CFG_RTOS == 2 // FreeRTOS
+
+#if !defined(g_comms_usb_pcdc0_tx_mutex)
+rm_comms_mutex_t g_comms_usb_pcdc0_tx_mutex;
+#endif
+
+#if !defined(g_comms_usb_pcdc0_rx_mutex)
+rm_comms_mutex_t g_comms_usb_pcdc0_rx_mutex;
+#endif
+#if !defined(g_comms_usb_pcdc0_tx_semaphore)
+rm_comms_semaphore_t g_comms_usb_pcdc0_tx_semaphore;
+#endif
+
+#if !defined(g_comms_usb_pcdc0_rx_semaphore)
+rm_comms_semaphore_t g_comms_usb_pcdc0_rx_semaphore;
+#endif
+
+#else
+
+#endif
+
+rm_comms_usb_pcdc_extended_cfg_t g_comms_usb_pcdc0_extended_cfg =
+{
+#if BSP_CFG_RTOS
+
+#if !defined(g_comms_usb_pcdc0_tx_mutex)
+    .p_tx_mutex = &g_comms_usb_pcdc0_tx_mutex,
+#else
+    .p_tx_mutex = NULL,
+#endif
+
+#if !defined(g_comms_usb_pcdc0_rx_mutex)
+    .p_rx_mutex = &g_comms_usb_pcdc0_rx_mutex,
+#else
+    .p_rx_mutex = NULL,
+#endif
+
+#if !defined(g_comms_usb_pcdc0_tx_semaphore)
+    .p_tx_semaphore = &g_comms_usb_pcdc0_tx_semaphore,
+#else
+    .p_tx_semaphore = NULL,
+#endif
+
+#if !defined(g_comms_usb_pcdc0_rx_semaphore)
+    .p_rx_semaphore = &g_comms_usb_pcdc0_rx_semaphore,
+#else
+    .p_rx_semaphore = NULL,
+#endif
+    .mutex_timeout  = 0xFFFFFFFF,
+#endif
+#if BSP_CFG_RTOS == 0
+    .p_gpt = &RA_NOT_DEFINED,
+#endif
+    .p_usb = &g_basic0,
+    .connect_detection_en = 0,
+};
+
+const rm_comms_cfg_t g_comms_usb_pcdc0_cfg =
+{
+    .semaphore_timeout  = 0xFFFFFFFF,
+    .p_lower_level_cfg  = NULL,
+    .p_extend           = (void*)&g_comms_usb_pcdc0_extended_cfg,
+    .p_callback         = NULL,
+};
+
+const rm_comms_instance_t g_comms_usb_pcdc0 =
+{
+    .p_ctrl = &g_comms_usb_pcdc0_ctrl,
+    .p_cfg  = &g_comms_usb_pcdc0_cfg,
+    .p_api  = &g_comms_on_comms_usb_pcdc,
+};
+
+extern uint32_t g_fsp_common_thread_count;
+
+                const rm_freertos_port_parameters_t new_thread0_parameters =
+                {
+                    .p_context = (void *) NULL,
+                };
+
+                void new_thread0_create (void)
+                {
+                    /* Increment count so we will know the number of threads created in the RA Configuration editor. */
+                    g_fsp_common_thread_count++;
+
+                    /* Initialize each kernel object. */
+                    
+
+                    #if 1
+                    new_thread0 = xTaskCreateStatic(
+                    #else
+                    BaseType_t new_thread0_create_err = xTaskCreate(
+                    #endif
+                        new_thread0_func,
+                        (const char *)"New Thread",
+                        1024/4, // In words, not bytes
+                        (void *) &new_thread0_parameters, //pvParameters
+                        1,
+                        #if 1
+                        (StackType_t *)&new_thread0_stack,
+                        (StaticTask_t *)&new_thread0_memory
+                        #else
+                        & new_thread0
+                        #endif
+                    );
+
+                    #if 1
+                    if (NULL == new_thread0)
+                    {
+                        rtos_startup_err_callback(new_thread0, 0);
+                    }
+                    #else
+                    if (pdPASS != new_thread0_create_err)
+                    {
+                        rtos_startup_err_callback(new_thread0, 0);
+                    }
+                    #endif
+                }
+                static void new_thread0_func (void * pvParameters)
+                {
+                    /* Initialize common components */
+                    rtos_startup_common_init();
+
+                    /* Initialize each module instance. */
+                    
+
+                    #if (1 == BSP_TZ_NONSECURE_BUILD) && (1 == 1)
+                    /* When FreeRTOS is used in a non-secure TrustZone application, portALLOCATE_SECURE_CONTEXT must be called prior
+                     * to calling any non-secure callable function in a thread. The parameter is unused in the FSP implementation.
+                     * If no slots are available then configASSERT() will be called from vPortSVCHandler_C(). If this occurs, the
+                     * application will need to either increase the value of the "Process Stack Slots" Property in the rm_tz_context
+                     * module in the secure project or decrease the number of threads in the non-secure project that are allocating
+                     * a secure context. Users can control which threads allocate a secure context via the Properties tab when
+                     * selecting each thread. Note that the idle thread in FreeRTOS requires a secure context so the application
+                     * will need at least 1 secure context even if no user threads make secure calls. */
+                     portALLOCATE_SECURE_CONTEXT(0);
+                    #endif
+
+                    /* Enter user code for this thread. Pass task handle. */
+                    new_thread0_entry(pvParameters);
+                }

@@ -1,0 +1,20 @@
+.program blink
+    ; 从CPU的TX FIFO拉取所需的循环次数
+    pull block
+    mov x, osr      ; 将循环次数存入X寄存器
+
+    set pindirs, 1  ; 设置引脚为输出
+
+.wrap_target
+    ; --- 高电平并延时 ---
+    set pins, 1     ; 拉高GP25
+    mov y, x        ; 将循环次数复制到Y
+high_loop:
+    jmp y--, high_loop ; 延时约 (Y * 1) 个状态机周期
+
+    ; --- 低电平并延时 ---
+    set pins, 0     ; 拉低GP25
+    mov y, x        ; 再次复制
+low_loop:
+    jmp y--, low_loop  ; 延时同样周期
+.wrap

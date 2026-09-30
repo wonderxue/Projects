@@ -1,0 +1,6 @@
+The choice symbol BSP_MPI1_MODE_6 (defined at /Users/wonderxue/Desktop/SDKs/SiFli//customer/boards/Kconfig_drv:712) was selected (set =y),
+but no symbol ended
+up as the choice selection. Check these unsatisfied dependencies: BSP_ENABLE_MPI1 (=n), BSP_USING_MPI (=n). 
+The choice symbol BSP_MPI2_MODE_1 (defined at /Users/wonderxue/Desktop/SDKs/SiFli//customer/boards/Kconfig_drv:793) was selected (set =y),
+but no symbol ended
+up as the choice selection. Check these unsatisfied dependencies: BSP_ENABLE_MPI2 (=n), BSP_USING_MPI (=n). 

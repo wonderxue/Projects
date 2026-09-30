@@ -1,0 +1,25 @@
+dependencies:
+  cherry-embedded/cherryusb:
+    component_hash: fbc33d7d23106be270060836dfa24f070469a55d24393399019cf03f6b77e9a7
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32s2
+    - esp32s3
+    - esp32p4
+    version: 1.5.2~1
+  idf:
+    source:
+      type: idf
+    version: 5.5.0
+direct_dependencies:
+- cherry-embedded/cherryusb
+- idf
+manifest_hash: cf62bbb688ff4b3734123397a2f816ebd21999648e91ecfb71e22db263a67c5e
+target: esp32s3
+version: 2.0.0

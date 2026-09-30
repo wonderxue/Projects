@@ -1,0 +1,17 @@
+dependencies:
+  cherry-embedded/cherryusb:
+    dependencies: []
+    source:
+      path: /Users/wonderxue/Desktop/Projects/02_ESP32/04_Usb/01_demo/components/cherry-embedded__cherryusb
+      type: local
+    version: 1.5.2~2
+  idf:
+    source:
+      type: idf
+    version: 5.5.0
+direct_dependencies:
+- cherry-embedded/cherryusb
+- idf
+manifest_hash: e443aa4e0862f23aa192fa6c9d2e9c85c09a58570fe4f607e311fa1ce3d6bfed
+target: esp32s3
+version: 2.0.0

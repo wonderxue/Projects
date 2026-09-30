@@ -1,0 +1,31 @@
+# Pico Display Application Configuration
+# 配置文件示例
+
+# Serial port settings
+# 串口配置
+SERIAL_PORT=/dev/tty.usbmodem1101
+SERIAL_BAUD=115200
+
+# Screen settings
+# 屏幕配置
+SCREEN_STYLE=pixel        # pixel, glow, amoled
+SCREEN_WIDTH=64
+SCREEN_HEIGHT=32
+PIXEL_SIZE=8
+MARGIN=10
+
+# Performance settings
+# 性能配置
+TARGET_FPS=30
+BUFFER_SIZE=1024
+
+# Debug settings
+# 调试配置
+DEBUG_LEVEL=1
+LOG_FILE=/tmp/pico_display.log
+
+# USB settings
+# USB配置
+USB_VENDOR_ID=0x2E8A
+USB_PRODUCT_ID=0x000A
+USB_ENDPOINT_SIZE=64

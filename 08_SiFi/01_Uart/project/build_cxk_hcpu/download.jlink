@@ -1,0 +1,7 @@
+si SWD
+speed 10000
+r
+loadbin bootloader/bootloader.bin 0x62080000
+loadbin main.bin 0x620A0000
+loadbin ftab/ftab.bin 0x62000000
+exit

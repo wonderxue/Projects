@@ -1,0 +1,13 @@
+# Target labels
+ pioasmBuild
+# Source files and their labels
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild-complete.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-build.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-configure.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-download.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-install.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-mkdir.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-patch.rule
+/Users/wonderxue/Desktop/Projects/03_PICO/06_nrf24/printf_test_project/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/pioasmBuild-update.rule

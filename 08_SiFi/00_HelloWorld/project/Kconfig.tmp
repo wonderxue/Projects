@@ -1,0 +1,5 @@
+source "/Users/wonderxue/Desktop/SDKs/SiFli/customer/boards/cxk/hcpu/Kconfig.board"
+source "$SIFLI_SDK/customer/boards/Kconfig.v2"
+source "$SIFLI_SDK/Kconfig.v2"
+orsource "sf-pkgs/Kconfig.conandeps"
+rsource "Kconfig.proj"

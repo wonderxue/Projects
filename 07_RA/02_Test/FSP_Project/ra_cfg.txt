@@ -1,0 +1,721 @@
+FSP Configuration
+  Board "Custom User Board (Any Device)"
+  R7FA4C1BD3CFP
+    part_number: R7FA4C1BD3CFP
+    rom_size_bytes: 524288
+    ram_size_bytes: 98304
+    data_flash_size_bytes: 8192
+    package_style: LQFP
+    package_pins: 100
+    number of cores: 1
+    
+  R7FA4C1BD3CFP
+  RA4C1
+    series: 4
+    
+  RA4C1 Family
+    Enable inline BSP IRQ functions: Enabled
+    Security: Exceptions: Exception Response: Non-Maskable Interrupt
+    Security: Exceptions: BusFault, HardFault, and NMI Target: Secure State
+    Security: System Reset Request Accessibility: Secure State
+    Security: Exceptions: Prioritize Secure Exceptions: Disabled
+    Security: Cache Accessibility: Both Secure and Non-Secure State
+    Security: System Reset Status Accessibility: Both Secure and Non-Secure State
+    Security: SRAM Accessibility: SRAM Protection: Both Secure and Non-Secure State
+    Security: SRAM Accessibility: SRAM ECC: Both Secure and Non-Secure State
+    Security: BUS Accessibility: Bus Security Attribution Register A: Both Secure and Non-Secure State
+    Security: BUS Accessibility: Bus Security Attribution Register B: Both Secure and Non-Secure State
+    Security: Uninitialized Non-Secure Application Fallback: Enable Uninitialized Non-Secure Application Fallback
+    Startup C-Cache Line Size: 32 Bytes
+    Clocks: HOCO FLL Function: Disabled
+    Main Oscillator Wait Time: 262144 cycles
+    
+  RA4C1 Device Options
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Start Mode: IWDT is stopped after a reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Timeout Period: 2048 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Dedicated Clock Frequency Divisor: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Reset Interrupt Request Select: Reset is enabled
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: Independent WDT: Stop Control: Stop counting when in Sleep,Snooze modec, or Software Standby
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Start Mode Select: Stop WDT after a reset (register-start mode)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Timeout Period: 16384 cycles
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Clock Frequency Division Ratio: 128
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window End Position:  0% (no window end position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Window Start Position: 100% (no window start position)
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Reset Interrupt Request: Reset
+    OFS Registers: OFS0 (Option Function Select Register 0) Settings: WDT: Stop Control: Stop counting when entering Sleep mode
+    OFS Registers: DUALSEL (Dual Mode Select Register) Settings: Disabled
+    OFS Registers: DUALSEL (Dual Mode Select Register) Settings: Bank Mode: Linear
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Disabled
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: Voltage Detection 0 Level: 1.90 V
+    OFS Registers: OFS1 (Option Function Select Register 1) Settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
+    OFS Registers: BANKSEL (Bank Select Register) Settings: Disabled
+    OFS Registers: BANKSEL (Bank Select Register) Settings: Startup Bank Switch: Disabled
+    OFS Registers: BANKSEL (Bank Select Register) Settings: Block Swap Select: Disabled
+    OFS Registers: BPS (Block Protect Setting Register) Settings: Disabled
+    OFS Registers: BPS (Block Protect Setting Register) Settings: BPS0: 
+    OFS Registers: BPS (Block Protect Setting Register) Settings: BPS2: 
+    OFS Registers: PBPS (Permanent Block Protect Setting Register) Settings: Disabled
+    OFS Registers: PBPS (Permanent Block Protect Setting Register) Settings: PBPS0: 
+    OFS Registers: PBPS (Permanent Block Protect Setting Register) Settings: PBPS2: 
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Enabled
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Voltage Detection 0 Circuit Start: Voltage monitor 0 reset is disabled after reset
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: Voltage Detection 0 Level: 1.90 V
+    OFS Registers: OFS1_SEC (Option Function Select Register 1 Secure) Settings: HOCO Oscillation Enable: HOCO oscillation is disabled after reset
+    OFS Registers: BANKSEL_SEC (Bank Select Register Secure) Settings: Disabled
+    OFS Registers: BANKSEL_SEC (Bank Select Register Secure) Settings: Startup Bank Switch: Disabled
+    OFS Registers: BANKSEL_SEC (Bank Select Register Secure) Settings: Block Swap Select: Disabled
+    OFS Registers: BPS_SEC (Block Protect Setting Register Secure) Settings: Disabled
+    OFS Registers: BPS_SEC (Block Protect Setting Register Secure) Settings: BPS_SEC0: 
+    OFS Registers: BPS_SEC (Block Protect Setting Register Secure) Settings: BPS_SEC2: 
+    OFS Registers: PBPS_SEC (Permanent Block Protect Setting Register Secure) Settings: Disabled
+    OFS Registers: PBPS_SEC (Permanent Block Protect Setting Register Secure) Settings: PBPS_SEC0: 
+    OFS Registers: PBPS_SEC (Permanent Block Protect Setting Register Secure) Settings: PBPS_SEC2: 
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Enabled
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Voltage Detection 0 Level Security Attribution: VDSEL setting loads from OFS1_SEC
+    OFS Registers: OFS1_SEL (OFS1 Security Attribution) Settings: Voltage Detection 0 Circuit Start Security Attribution: LVDAS setting loads from OFS1_SEC
+    OFS Registers: BANKSEL_SEL (Banksel Security Attribution) Settings: Disabled
+    OFS Registers: BANKSEL_SEL (Banksel Security Attribution) Settings: Flash Bank Select Accessibility: Non-Secure State
+    OFS Registers: BPS_SEL (BPS Security Attribution) Settings: Disabled
+    OFS Registers: BPS_SEL (BPS Security Attribution) Settings: BPS_SEL0: 
+    OFS Registers: BPS_SEL (BPS Security Attribution) Settings: BPS_SEL2: 
+    
+  RA4C1 event data
+  RA Common
+    Main stack size (bytes): 0x400
+    Heap size (bytes): 0
+    Bootloader Secondary XIP: Disabled
+    MCU Vcc (mV): 3300
+    Parameter checking: Disabled
+    Assert Failures: Return FSP_ERR_ASSERTION
+    Clock Registers not Reset Values during Startup: Disabled
+    Main Oscillator Populated: Populated
+    PFS Protect: Enabled
+    C Runtime Initialization : Enabled
+    Early BSP Initialization : Disabled
+    Main Oscillator Clock Source: Crystal or Resonator
+    Subclock Populated: Populated
+    Subclock Drive (Drive capacitance availability varies by MCU): Standard/Normal mode
+    Subclock Stabilization Time (ms): 1000
+    
+  Clocks
+    XTAL 10000000Hz
+    HOCO 48MHz
+    PLL Src: XTAL
+    PLL Div /1
+    PLL Mul x8.0
+    Clock Src: PLL
+    CLKOUT Disabled
+    CANFDCLK Disabled
+    UTASEL Src: Disabled
+    ICLK Div /2
+    PCLKA Div /2
+    PCLKB Div /4
+    PCLKC Div /4
+    PCLKD Div /2
+    FCLK Div /4
+    CLKOUT Div /1
+    CANFDCLK Div /8
+    UARTA0 Src: UTASEL
+    UARTA1 Src: UTASEL
+    
+  Pin Configurations
+    R7FA4C1BD3CFP.pincfg -> g_bsp_pin_cfg
+      AVCC0 92 SYSTEM_AVCC0 - - - - - - - - IO "Read only" - 
+      AVSS0 93 SYSTEM_AVSS0 - - - - - - - - IO "Read only" - 
+      P000 100 - - - - Disabled - - "ADC0: AN005; IRQ6: IRQ6" - None - - 
+      P001 99 - - - - Disabled - - "ADC0: AN006; IRQ7: IRQ7" - None - - 
+      P002 98 - - - - Disabled - - "ADC0: AN000; IRQ8: IRQ8" - None - - 
+      P003 97 - - - - Disabled - - "ADC0: AN001" - None - - 
+      P004 96 - - - - Disabled - - "ADC0: AN002; IRQ9: IRQ9" - None - - 
+      P010 95 - - - - Disabled - - "ADC0: AN003; IRQ10: IRQ10; SYSTEM: VREFH0" - None - - 
+      P011 94 - - - - Disabled - - "ADC0: AN004; IRQ11: IRQ11; SYSTEM: VREFL0" - None - - 
+      P100 75 - - - - Disabled - - "AGT0: AGTIO0; GPT5: GTIOC5B; GPT_POEGA: GTETRGA; IIC0: SDA0; IRQ2: IRQ2; QSPI: QIO1; SCI0: RXD0; SLCDC: SEG41; SPI2: MISO2" - None - - 
+      P101 74 - - - - Disabled - - "AGT0: AGTEE0; GPT5: GTIOC5A; GPT_POEGB: GTETRGB; IIC0: SCL0; IRQ1: IRQ1; QSPI: QIO0; SCI0: TXD0; SLCDC: SEG40; SPI2: MOSI2" - None - - 
+      P102 73 - - - - Disabled - - "ADC0(Digital): ADTRG0; AGT0: AGTO0; CANFD0: CTX0; GPT_OPS: GTOWLO; QSPI: QIO3; SCI0: SCK0; SCI3: RXD3; SLCDC: SEG39; SPI2: RSPCK2" - None - - 
+      P103 72 - - - - Disabled - - "CANFD0: CRX0; GPT_OPS: GTOWUP; QSPI: QIO2; SCI0: CTS_RTS0; SCI3: TXD3; SLCDC: SEG38; SPI2: SSLC0" - None - - 
+      P104 71 - - - - Disabled - - "GPT1: GTIOC1B; GPT_POEGB: GTETRGB; IRQ1: IRQ1; QSPI: QSPCLK; SCI3: SCK3; SLCDC: SEG37; SPI2: SSLC1" - None - - 
+      P105 70 - - - - Disabled - - "GPT1: GTIOC1A; GPT_POEGA: GTETRGA; IRQ0: IRQ0; SCI3: CTS_RTS3; SLCDC: SEG36; SPI2: SSLC2" - None - - 
+      P106 69 - - - - Disabled - - "AGT0: AGTOB0; GPT_POEGD: GTETRGD; SCI3: CTS3; SLCDC: SEG35; SPI2: SSLC3" - None - - 
+      P107 68 - - - - Disabled - - "AGT0: AGTOA0; SLCDC: SEG34" - None - - 
+      P108 51 JTAG/SWD_SWDIO - - - "Peripheral mode" - - "GPT0: GTIOC0B; GPT_OPS: GTOULO; JTAG/SWD: SWDIO; SCI9: CTS_RTS9; SLCDC: SEG24; SPI0: SSLA0" - IO - - 
+      P109 52 - - - - Disabled - - "CLKOUT: CLKOUT; GPT1: GTIOC1A; GPT_OPS: GTOVUP; SCI9: TXD9; SLCDC: COM4; SLCDC: SEG0; SPI0: MOSI0" - None - - 
+      P110 53 - - - - Disabled - - "GPT1: GTIOC1B; GPT_OPS: GTOVLO; IRQ3: IRQ3; SCI9: RXD9; SLCDC: COM5; SLCDC: SEG1; SPI0: MISO0" - None - - 
+      P111 54 - - - - Disabled - - "IRQ4: IRQ4; SCI9: SCK9; SLCDC: COM6; SLCDC: SEG2; SPI0: RSPCK0" - None - - 
+      P112 55 - - - - Disabled - - "QSPI: QSSL; SCI9: CTS_RTS9; SLCDC: COM7; SLCDC: SEG3; SPI0: SSLA0" - None - - 
+      P113 56 - - - - Disabled - - "AGT1: AGTIO1; IRQ10: IRQ10; SLCDC: SEG25" - None - - 
+      P114 57 - - - - Disabled - - "SCI9: CTS9; SLCDC: SEG26" - None - - 
+      P115 58 - - - - Disabled - - "GPT4: GTIOC4A; SCI1: TXD1; SLCDC: SEG27" - None - - 
+      P200 40 - - - - Disabled - - "IRQ: NMI" - None - - 
+      P201 39 - - - - Disabled - - "SYSTEM: MD" - None - - 
+      P204 33 - - - - Disabled - - "GPT_OPS: GTIU; QSPI: QSPCLK; SCI4: CTS_RTS4; SLCDC: SEG14; SPI0: SSLA0" - None - - 
+      P205 32 - - - - Disabled - - "AGT1: AGTO1; CLKOUT: CLKOUT; GPT4: GTIOC4A; GPT_OPS: GTIV; IRQ1: IRQ1; SCI4: SCK4; SLCDC: COM0" - None - - 
+      P206 31 - - - - Disabled - - "GPT3: GTIOC3B; GPT_OPS: GTIU; IRQ0: IRQ0; SCI4: RXD4" - None - - 
+      P207 30 - - - - Disabled - - "GPT3: GTIOC3A; QSPI: QSSL; SCI4: TXD4" - None - - 
+      P208 37 - - - - Disabled - - "GPT_OPS: GTOVLO; IRQ12: IRQ12; QSPI: QIO3; SLCDC: COM1" - None - - 
+      P209 36 - - - - Disabled - - "GPT_OPS: GTOVUP; QSPI: QIO2; SLCDC: SEG17; SPI0: RSPCK0" - None - - 
+      P210 35 - - - - Disabled - - "GPT_OPS: GTIW; QSPI: QIO1; SLCDC: SEG16; SPI0: MISO0" - None - - 
+      P211 34 - - - - Disabled - - "GPT_OPS: GTIV; QSPI: QIO0; SLCDC: SEG15; SPI0: MOSI0" - None - - 
+      P212 14 - - - - Disabled - - "AGT1: AGTEE1; CGC: EXTAL; GPT0: GTIOC0B; GPT_POEGD: GTETRGD; IRQ3: IRQ3; SCI0: RXD0" - None - - 
+      P213 13 - - - - Disabled - - "CGC: XTAL; GPT0: GTIOC0A; GPT_POEGC: GTETRGC; IRQ2: IRQ2; SCI0: TXD0" - None - - 
+      P214 10 - - - - Disabled - - "CGC: XCOUT" - None - - 
+      P215 9 - - - - Disabled - - "CGC: XCIN" - None - - 
+      P300 50 JTAG/SWD_SWCLK - - - "Peripheral mode" - - "GPT0: GTIOC0A; GPT_OPS: GTOUUP; JTAG/SWD: SWCLK; SCI5: CTS5; SLCDC: SEG23; SPI0: SSLA1" - IO - - 
+      P301 49 - - - - Disabled - - "AGT0: AGTIO0; GPT4: GTIOC4B; GPT_OPS: GTOULO; IIC0: SDA0; IRQ6: IRQ6; SCI5: RXD5; SLCDC: SEG22; SPI0: SSLA2" - None - - 
+      P302 48 - - - - Disabled - - "ADC0(Digital): ADTRG0; GPT4: GTIOC4A; GPT_OPS: GTOUUP; IIC0: SCL0; IRQ5: IRQ5; SCI5: TXD5; SLCDC: SEG21; SPI0: SSLA3" - None - - 
+      P303 47 - - - - Disabled - - "GPT3: GTIOC3B; SCI5: SCK5; SLCDC: COM3" - None - - 
+      P304 44 - - - - Disabled - - "GPT3: GTIOC3A; GPT_OPS: GTOWLO; IRQ9: IRQ9; SCI5: CTS_RTS5; SLCDC: COM2; UARTA0: CLKA0" - None - - 
+      P305 43 - - - - Disabled - - "GPT_OPS: GTOWUP; IRQ8: IRQ8; SLCDC: SEG20; UARTA0: RxDA0" - None - - 
+      P306 42 - - - - Disabled - - "GPT_OPS: GTOULO; SLCDC: SEG19; UARTA0: TxDA0" - None - - 
+      P307 41 - - - - Disabled - - "GPT_OPS: GTOUUP; SLCDC: SEG18" - None - - 
+      P400 1 - - - - Disabled - - "AGT1: AGTIO1; GPT2: GTIOC2A; GPT_POEGB: GTETRGB; IIC1: SCL1; IRQ0: IRQ0; SCI1: TXD1; SLCDC: SEG4" - None - - 
+      P401 2 - - - - Disabled - - "CANFD0: CRX0; GPT2: GTIOC2B; GPT_POEGA: GTETRGA; IIC1: SDA1; IRQ5: IRQ5; SCI1: RXD1; SLCDC: SEG5" - None - - 
+      P402 3 - - - - Disabled - - "AGT0: AGTIO0; AGT1: AGTIO1; CAC: CACREF; CANFD0: CTX0; GPT_POEGC: GTETRGC; IRQ4: IRQ4; SCI1: CTS_RTS1; SLCDC: SEG6" - None - - 
+      P403 4 - - - - Disabled - - "AGT0: AGTIO0; AGT1: AGTIO1; IRQ14: IRQ14; SCI1: SCK1; SLCDC: SEG7" - None - - 
+      P404 5 - - - - Disabled - - "AGT0: AGTIO0; AGT1: AGTIO1; GPT1: GTIOC1B; IRQ15: IRQ15; SCI5: TXD5; SLCDC: SEG23" - None - - 
+      P405 6 - - - - Disabled - - "GPT1: GTIOC1A; SCI5: RXD5; SLCDC: SEG24" - None - - 
+      P407 25 - - - - Disabled - - "ADC0(Digital): ADTRG0; AGT0: AGTIO0; GPT2: GTIOC2A; RTC: RTCOUT; SCI4: CTS4; SLCDC: SEG13" - None - - 
+      P408 24 - - - - Disabled - - "GPT2: GTIOC2B; GPT_OPS: GTOWLO; IRQ7: IRQ7; SCI3: RXD3; SCI4: CTS_RTS4; SLCDC: VL3; SPI1: RSPCK1" - None - - 
+      P409 23 - - - - Disabled - - "GPT_OPS: GTOWUP; IRQ6: IRQ6; SCI3: TXD3; SLCDC: VL4; SPI1: MISO1" - None - - 
+      P410 22 - - - - Disabled - - "AGT1: AGTOB1; GPT_OPS: GTOVLO; IRQ5: IRQ5; SCI3: SCK3; SLCDC: VL2; SPI1: MOSI1" - None - - 
+      P411 21 - - - - Disabled - - "AGT1: AGTOA1; GPT_OPS: GTOVUP; IRQ4: IRQ4; SCI3: CTS_RTS3; SLCDC: VL1; SPI1: SSLB0" - None - - 
+      P412 20 - - - - Disabled - - "AGT1: AGTEE1; GPT_OPS: GTOULO; SCI3: CTS3; SLCDC: SEG12; SPI1: SSLB1" - None - - 
+      P413 19 - - - - Disabled - - "GPT_OPS: GTOUUP; SLCDC: SEG11; SPI1: SSLB2" - None - - 
+      P414 18 - - - - Disabled - - "GPT0: GTIOC0B; IRQ9: IRQ9; SLCDC: SEG10; SPI1: SSLB3" - None - - 
+      P415 17 - - - - Disabled - - "GPT0: GTIOC0A; IRQ8: IRQ8; SLCDC: SEG9" - None - - 
+      P500 76 - - - - Disabled - - "ADC0: AN021; AGT0: AGTOA0; CAC: CACREF; GPT_OPS: GTIU; QSPI: QSPCLK; SCI0: CTS0; SLCDC: SEG42" - None - - 
+      P501 77 - - - - Disabled - - "AGT0: AGTOB0; GPT_OPS: GTIV; IRQ11: IRQ11; QSPI: QSSL; SLCDC: SEG43" - None - - 
+      P502 78 - - - - Disabled - - "GPT_OPS: GTIW; IRQ12: IRQ12; QSPI: QIO0; SLCDC: SEG44" - None - - 
+      P503 79 - - - - Disabled - - "GPT_POEGC: GTETRGC; QSPI: QIO1; SLCDC: SEG45" - None - - 
+      P504 80 - - - - Disabled - - "GPT_POEGD: GTETRGD; QSPI: QIO2; SLCDC: SEG46" - None - - 
+      P505 81 - - - - Disabled - - "IRQ14: IRQ14; QSPI: QIO3; SLCDC: SEG47" - None - - 
+      P506 84 - - - - Disabled - - "ADC0: AN020; GPT4: GTIOC4A; IRQ13: IRQ13; SCI5: TXD5; SPI2: MOSI2" - None - - 
+      P507 85 - - - - Disabled - - "ADC0: AN019; GPT4: GTIOC4B; SCI5: RXD5; SPI2: MISO2; UARTA0: CLKA0" - None - - 
+      P508 86 - - - - Disabled - - "ADC0: AN018; EXLVDVBAT: EXLVDVBAT; SCI5: CTS_RTS5; SPI2: RSPCK2; UARTA0: TxDA0" - None - - 
+      P509 87 - - - - Disabled - - "ADC0: AN017; EXLVD: EXLVD; SCI5: SCK5; SPI2: SSLC0; UARTA0: RxDA0" - None - - 
+      P510 88 - - - - Disabled - - "ADC0: AN025; SCI9: TXD9; SPI2: SSLC1" - None - - 
+      P511 89 - - - - Disabled - - "ADC0: AN024; SCI9: RXD9; SPI2: SSLC2; UARTA1: CLKA1" - None - - 
+      P512 90 - - - - Disabled - - "ADC0: AN023; SCI9: CTS_RTS9; SPI2: SSLC3; UARTA1: TxDA1" - None - - 
+      P513 91 - - - - Disabled - - "ADC0: AN022; IRQ15: IRQ15; SCI9: SCK9; UARTA1: RxDA1" - None - - 
+      P600 67 - - - - Disabled - - "CAC: CACREF; CLKOUT: CLKOUT; GPT2: GTIOC2B; SLCDC: SEG33" - None - - 
+      P601 66 - - - - Disabled - - "GPT2: GTIOC2A; SLCDC: SEG32" - None - - 
+      P602 65 - - - - Disabled - - "SLCDC: SEG31" - None - - 
+      P608 59 - - - - Disabled - - "GPT4: GTIOC4B; SCI1: RXD1; SLCDC: SEG28" - None - - 
+      P609 60 - - - - Disabled - - "GPT5: GTIOC5A; SCI1: SCK1; SLCDC: SEG29" - None - - 
+      P610 61 - - - - Disabled - - "GPT5: GTIOC5B; SCI1: CTS_RTS1; SLCDC: SEG30" - None - - 
+      P708 16 - - - - Disabled - - "CAC: CACREF; IRQ11: IRQ11; SLCDC: SEG8" - None - - 
+      P814 28 - - - - Disabled - - "CANFD0: CTX0; SLCDC: CAPL; UARTA1: RxDA1" - None - - 
+      P815 27 - - - - Disabled - - "CANFD0: CRX0; SLCDC: CAPH; UARTA1: TxDA1" - None - - 
+      RES 38 SYSTEM_RES - - - - - - - - IO "Read only" - 
+      RTCIC0 7 SYSTEM_RTCIC0 - - - - - - - - IO "Read only" - 
+      VCC 15 SYSTEM_VCC - - - - - - - - IO "Read only" - 
+      VCC 29 SYSTEM_VCC - - - - - - - - IO "Read only" - 
+      VCC 46 SYSTEM_VCC - - - - - - - - IO "Read only" - 
+      VCC 62 SYSTEM_VCC - - - - - - - - IO "Read only" - 
+      VCC 82 SYSTEM_VCC - - - - - - - - IO "Read only" - 
+      VCL 64 SYSTEM_VCL - - - - - - - - IO "Read only" - 
+      VCL0 12 SYSTEM_VCL0 - - - - - - - - IO "Read only" - 
+      VRTC 8 SYSTEM_VRTC - - - - - - - - IO "Read only" - 
+      VSS 11 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 26 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 45 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 63 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 83 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+    
+  User Events
+    
+  User Event Links
+    
+  Module "I/O Port (r_ioport)"
+    Parameter Checking: Default (BSP)
+    CCD Support: Not Supported
+    
+  Module "FreeRTOS Port (rm_freertos_port)"
+  Module "MCUboot"
+    General: Custom mcuboot_config.h: 
+    Signing and Encryption Options: Signature Type: ECDSA P-256
+    General: Upgrade Mode: Overwrite Only
+    General: Validate Primary Image: Enabled
+    General: Downgrade Prevention (Overwrite Only): Disabled
+    General: Watchdog Feed: 
+    General: Measured Boot: Disabled
+    General: Data Sharing: Disabled
+    Flash Configuration: Dual Bank Mode: Configure in the BSP tab
+    Data Sharing: Maximum Measured Boot Record Size (Bytes): 0x64
+    Data Sharing: Shared Data Size (Bytes): 0x380
+    Data Sharing: Shared Data Address: 0x20000000
+    Flash Configuration: Memory Mirror Function (MMF) support: Disabled
+    Signing and Encryption Options: Boot Record: 
+    Signing and Encryption Options: TrustZone: Boot Record (Image 2): 
+    Signing and Encryption Options: Custom:  --confirm
+    Signing and Encryption Options: TrustZone: Custom (Image 2):  --confirm
+    Signing and Encryption Options: Python: python
+    Signing and Encryption Options: Encryption Scheme: Encryption Disabled
+    
+  Module "MCUboot Port for RA (rm_mcuboot_port)"
+  Module "MCUboot logging"
+    Debugging: Log Level: Off
+    
+  Module "MbedTLS (Crypto Only)"
+    Hardware Acceleration: TRNG: Enabled
+    Hardware Acceleration: Key Format: AES: Plaintext and Wrapped (Vendor)
+    Hardware Acceleration: Key Format: ECC: Plaintext and Wrapped (Vendor)
+    Hardware Acceleration: Key Format: RSA: Plaintext Only
+    Hardware Acceleration: Hash: SHA256/224: Use Hardware
+    Hardware Acceleration: Hash: SHA512/384: Use Hardware
+    Hardware Acceleration: Hash: SHA3_224/256/384/512: Use Software
+    Hardware Acceleration: Cipher: AES: Use Hardware
+    Hardware Acceleration: Public Key Cryptography (PKC): ECC: Use Hardware
+    Hardware Acceleration: Public Key Cryptography (PKC): ECDSA : Use Hardware
+    Hardware Acceleration: Public Key Cryptography (PKC): ECDH : Use Hardware
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 1024: Use Software
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 2048: Use Software
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 3072: Key Generation: 
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 3072: Signing: 
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 3072: Verification: Disabled
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 4096: Key Generation: 
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 4096: Signing: 
+    Hardware Acceleration: Public Key Cryptography (PKC): RSA 4096: Verification: Disabled
+    Hardware Acceleration: Crypto Engine Initialization: Enabled
+    Platform: MBEDTLS_HAVE_ASM: Undefine
+    Platform: MBEDTLS_NO_UDBL_DIVISION: Undefine
+    Platform: MBEDTLS_NO_64BIT_MULTIPLICATION: Undefine
+    Platform: MBEDTLS_HAVE_SSE2: Undefine
+    Platform: MBEDTLS_HAVE_TIME: Undefine
+    Platform: MBEDTLS_HAVE_TIME_DATE: Undefine
+    Platform: MBEDTLS_PLATFORM_MEMORY: Define
+    Platform: MBEDTLS_PLATFORM_NO_STD_FUNCTIONS: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_SETBUF_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_EXIT_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_TIME_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_FPRINTF_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_PRINTF_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_SNPRINTF_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_VSNPRINTF_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_NV_SEED_ALT: Undefine
+    Platform: Alternate: MBEDTLS_PLATFORM_MS_TIME_ALT: Undefine
+    General: MBEDTLS_PSA_CRYPTO_DRIVERS: Undefine
+    General: MBEDTLS_DEPRECATED_WARNING: Undefine
+    General: MBEDTLS_DEPRECATED_REMOVED: Define
+    Platform: MBEDTLS_TIMING_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_ARIA_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_CAMELLIA_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_CCM_ALT: Define
+    Cipher: Alternate: MBEDTLS_CHACHA20_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_CHACHAPOLY_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_CMAC_ALT: Define
+    Cipher: Alternate: MBEDTLS_DES_ALT: Undefine
+    Public Key Cryptography (PKC): DHM: Alternate: MBEDTLS_DHM_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECJPAKE_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_GCM_ALT: Define
+    Cipher: Alternate: MBEDTLS_NIST_KW_ALT: Undefine
+    Hash: Alternate: MBEDTLS_MD5_ALT: Undefine
+    Message Authentication Code (MAC): Alternate: MBEDTLS_POLY1305_ALT: Undefine
+    Hash: Alternate: MBEDTLS_RIPEMD160_ALT: Undefine
+    Hash: Alternate: MBEDTLS_SHA1_ALT: Undefine
+    Hash: Alternate: MBEDTLS_MD5_PROCESS_ALT: Undefine
+    Hash: Alternate: MBEDTLS_RIPEMD160_PROCESS_ALT: Undefine
+    Hash: Alternate: MBEDTLS_SHA1_PROCESS_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_DES_SETKEY_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_DES_CRYPT_ECB_ALT: Undefine
+    Cipher: Alternate: MBEDTLS_DES3_CRYPT_ECB_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDH_GEN_PUBLIC_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDH_COMPUTE_SHARED_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECDSA_GENKEY_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_INTERNAL_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_NO_FALLBACK: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_RANDOMIZE_JAC_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_ADD_MIXED_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_DOUBLE_JAC_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_NORMALIZE_JAC_MANY_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_NORMALIZE_JAC_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_DOUBLE_ADD_MXZ_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_RANDOMIZE_MXZ_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: Alternate: MBEDTLS_ECP_NORMALIZE_MXZ_ALT: Undefine
+    Cipher: AES: MBEDTLS_AES_ROM_TABLES: Undefine
+    Cipher: AES: MBEDTLS_AES_FEWER_TABLES: Undefine
+    Cipher: AES: MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH: Undefine
+    Cipher: MBEDTLS_CAMELLIA_SMALL_MEMORY: Undefine
+    General: MBEDTLS_CHECK_RETURN_WARNING: Undefine
+    Cipher: MBEDTLS_CIPHER_MODE_CBC: Define
+    Cipher: MBEDTLS_CIPHER_MODE_CFB: Define
+    Cipher: MBEDTLS_CIPHER_MODE_CTR: Define
+    Cipher: MBEDTLS_CIPHER_MODE_OFB: Undefine
+    Cipher: MBEDTLS_CIPHER_MODE_XTS: Undefine
+    Cipher: MBEDTLS_CIPHER_NULL_CIPHER: Undefine
+    Cipher: MBEDTLS_CIPHER_PADDING_PKCS7: Define
+    Cipher: MBEDTLS_CIPHER_PADDING_ONE_AND_ZEROS: Define
+    Cipher: MBEDTLS_CIPHER_PADDING_ZEROS_AND_LEN: Define
+    Cipher: MBEDTLS_CIPHER_PADDING_ZEROS: Define
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP192R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP224R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP256R1_ENABLED: Define
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP384R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP521R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP192K1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP224K1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_SECP256K1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_BP256R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_BP384R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_BP512R1_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_CURVE25519_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: Curves: MBEDTLS_ECP_DP_CURVE448_ENABLED: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_NIST_OPTIM: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_RESTARTABLE: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDSA_DETERMINISTIC: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_PK_PARSE_EC_COMPRESSED: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_PK_PARSE_EC_EXTENDED: Undefine
+    General: MBEDTLS_ERROR_STRERROR_DUMMY: Define
+    Public Key Cryptography (PKC): MBEDTLS_GENPRIME: Define
+    Storage: MBEDTLS_FS_IO: Undefine
+    RNG: MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES: Undefine
+    Platform: MBEDTLS_NO_PLATFORM_ENTROPY: Define
+    RNG: MBEDTLS_ENTROPY_FORCE_SHA256: Undefine
+    RNG: MBEDTLS_ENTROPY_NV_SEED: Undefine
+    Key Configuration: MBEDTLS_PSA_CRYPTO_KEY_ID_ENCODES_OWNER: Undefine
+    General: MBEDTLS_MEMORY_DEBUG: Undefine
+    General: MBEDTLS_MEMORY_BACKTRACE: Undefine
+    Public Key Cryptography (PKC): RSA: MBEDTLS_PK_RSA_ALT_SUPPORT: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_PKCS1_V15: Define
+    Public Key Cryptography (PKC): MBEDTLS_PKCS1_V21: Define
+    Key Configuration: MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS: Undefine
+    Key Configuration: PSA_CRYPTO_DRIVER_TFM_BUILTIN_KEY_LOADER: Undefine
+    General: MBEDTLS_PSA_CRYPTO_CLIENT: Undefine
+    RNG: MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG: Undefine
+    General: MBEDTLS_PSA_CRYPTO_SPM: Undefine
+    General: MBEDTLS_PSA_KEY_STORE_DYNAMIC: Undefine
+    RNG: MBEDTLS_PSA_INJECT_ENTROPY: Undefine
+    General: MBEDTLS_PSA_ASSUME_EXCLUSIVE_BUFFERS: Undefine
+    Public Key Cryptography (PKC): RSA: MBEDTLS_RSA_NO_CRT: Define
+    General: MBEDTLS_SELF_TEST: Undefine
+    Hash: MBEDTLS_SHA256_SMALLER: Undefine
+    Hash: MBEDTLS_SHA512_SMALLER: Undefine
+    General: MBEDTLS_THREADING_ALT: Define
+    General: MBEDTLS_THREADING_PTHREAD: Undefine
+    General: MBEDTLS_USE_PSA_CRYPTO: Undefine
+    General: MBEDTLS_VERSION_FEATURES: Define
+    Cipher: MBEDTLS_AES_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_ASN1_PARSE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_ASN1_WRITE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_BASE64_C: Define
+    Cipher: MBEDTLS_BLOCK_CIPHER_NO_DECRYPT: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_BIGNUM_C: Define
+    Cipher: MBEDTLS_CAMELLIA_C: Undefine
+    Cipher: MBEDTLS_ARIA_C: Undefine
+    Cipher: MBEDTLS_CCM_C: Define
+    Cipher: MBEDTLS_CHACHA20_C: Undefine
+    Cipher: MBEDTLS_CHACHAPOLY_C: Undefine
+    Cipher: MBEDTLS_CIPHER_C: Define
+    Message Authentication Code (MAC): MBEDTLS_CMAC_C: Undefine
+    RNG: MBEDTLS_CTR_DRBG_C: Define
+    RNG: MBEDTLS_CTR_DRBG_C_ALT: Define
+    Cipher: MBEDTLS_DES_C: Undefine
+    Public Key Cryptography (PKC): DHM: MBEDTLS_DHM_C: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDH_C: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDSA_C: Define
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_C: Define
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECJPAKE_C: Undefine
+    Platform: MBEDTLS_ENTROPY_C: Define
+    General: MBEDTLS_ERROR_C: Define
+    Cipher: MBEDTLS_GCM_C: Define
+    Cipher: MBEDTLS_GCM_LARGE_TABLE: Undefine
+    Message Authentication Code (MAC): MBEDTLS_HKDF_C: Define
+    Message Authentication Code (MAC): MBEDTLS_HMAC_DRBG_C: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_LMS_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_LMS_PRIVATE: Undefine
+    Cipher: MBEDTLS_NIST_KW_C: Undefine
+    Hash: MBEDTLS_MD_C: Define
+    Hash: MBEDTLS_MD5_C: Define
+    General: MBEDTLS_MEMORY_BUFFER_ALLOC_C: Undefine
+    Post Quantum Cryptography (PQC): MBEDTLS_MLKEM_C: Undefine
+    Post Quantum Cryptography (PQC): MBEDTLS_MLDSA_C: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_OID_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PEM_PARSE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PEM_WRITE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PK_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PK_PARSE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PK_WRITE_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PKCS5_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_PKCS7_C: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_PKCS12_C: Define
+    Platform: MBEDTLS_PLATFORM_C: Define
+    Message Authentication Code (MAC): MBEDTLS_POLY1305_C: Undefine
+    General: MBEDTLS_PSA_CRYPTO_C: Define
+    General: MBEDTLS_PSA_CRYPTO_SE_C: Undefine
+    Storage: MBEDTLS_PSA_CRYPTO_STORAGE_C: Undefine
+    Storage: MBEDTLS_PSA_ITS_FILE_C: Undefine
+    Hash: MBEDTLS_RIPEMD160_C: Undefine
+    Public Key Cryptography (PKC): RSA: MBEDTLS_RSA_C: Define
+    Public Key Cryptography (PKC): RSA: MBEDTLS_RSA_GEN_KEY_MIN_BITS: Undefine
+    Public Key Cryptography (PKC): RSA: MBEDTLS_RSA_GEN_KEY_MIN_BITS value: 1024
+    Hash: MBEDTLS_SHA1_C: Define
+    Hash: MBEDTLS_SHA3_C: Undefine
+    Hash: MBEDTLS_SHA224_C: Define
+    Hash: MBEDTLS_SHA256_C: Define
+    Hash: MBEDTLS_SHA384_C: Undefine
+    Hash: MBEDTLS_SHA512_C: Undefine
+    General: MBEDTLS_THREADING_C: Define
+    General: MBEDTLS_TIMING_C: Undefine
+    General: MBEDTLS_VERSION_C: Define
+    Public Key Cryptography (PKC): MBEDTLS_MPI_WINDOW_SIZE: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_MPI_WINDOW_SIZE value: 6
+    Public Key Cryptography (PKC): MBEDTLS_MPI_MAX_SIZE: Undefine
+    Public Key Cryptography (PKC): MBEDTLS_MPI_MAX_SIZE value: 1024
+    RNG: MBEDTLS_CTR_DRBG_ENTROPY_LEN: Undefine
+    RNG: MBEDTLS_CTR_DRBG_ENTROPY_LEN value: 48
+    RNG: MBEDTLS_CTR_DRBG_RESEED_INTERVAL: Undefine
+    RNG: MBEDTLS_CTR_DRBG_RESEED_INTERVAL value: 10000
+    RNG: MBEDTLS_CTR_DRBG_MAX_INPUT: Undefine
+    RNG: MBEDTLS_CTR_DRBG_MAX_INPUT value: 256
+    RNG: MBEDTLS_CTR_DRBG_MAX_REQUEST: Undefine
+    RNG: MBEDTLS_CTR_DRBG_MAX_REQUEST value: 1024
+    RNG: MBEDTLS_CTR_DRBG_MAX_SEED_INPUT: Undefine
+    RNG: MBEDTLS_CTR_DRBG_MAX_SEED_INPUT value: 384
+    RNG: MBEDTLS_CTR_DRBG_USE_128_BIT_KEY: Undefine
+    RNG: MBEDTLS_HMAC_DRBG_RESEED_INTERVAL: Undefine
+    RNG: MBEDTLS_HMAC_DRBG_RESEED_INTERVAL value: 10000
+    RNG: MBEDTLS_HMAC_DRBG_MAX_INPUT: Undefine
+    RNG: MBEDTLS_HMAC_DRBG_MAX_INPUT value: 256
+    RNG: MBEDTLS_HMAC_DRBG_MAX_REQUEST: Undefine
+    RNG: MBEDTLS_HMAC_DRBG_MAX_REQUEST value: 1024
+    RNG: MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT: Undefine
+    RNG: MBEDTLS_HMAC_DRBG_MAX_SEED_INPUT value: 384
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_WINDOW_SIZE: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_WINDOW_SIZE value: 6
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_FIXED_POINT_OPTIM: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECP_FIXED_POINT_OPTIM value: 1
+    RNG: MBEDTLS_ENTROPY_MAX_SOURCES: Undefine
+    RNG: MBEDTLS_ENTROPY_MAX_SOURCES value: 20
+    RNG: MBEDTLS_ENTROPY_MAX_GATHER: Undefine
+    RNG: MBEDTLS_ENTROPY_MAX_GATHER value: 128
+    RNG: MBEDTLS_ENTROPY_MIN_HARDWARE: Undefine
+    RNG: MBEDTLS_ENTROPY_MIN_HARDWARE value: 32
+    General: MBEDTLS_MEMORY_ALIGN_MULTIPLE: Undefine
+    General: MBEDTLS_MEMORY_ALIGN_MULTIPLE value: 4
+    Platform: MBEDTLS_PLATFORM_STD_CALLOC: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_CALLOC value: calloc
+    Platform: MBEDTLS_PLATFORM_STD_FREE: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_FREE value: free
+    Platform: MBEDTLS_PLATFORM_STD_SETBUF: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_SETBUF value: setbuf
+    Platform: MBEDTLS_PLATFORM_STD_EXIT: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_EXIT value: exit
+    Platform: MBEDTLS_PLATFORM_STD_TIME: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_TIME value: time
+    Platform: MBEDTLS_PLATFORM_STD_FPRINTF: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_FPRINTF value: fprintf
+    Platform: MBEDTLS_PLATFORM_STD_PRINTF: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_PRINTF value: printf
+    Platform: MBEDTLS_PLATFORM_STD_SNPRINTF: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_SNPRINTF value: snprintf
+    Platform: MBEDTLS_PLATFORM_STD_EXIT_SUCCESS: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_EXIT_SUCCESS value: 0
+    Platform: MBEDTLS_PLATFORM_STD_EXIT_FAILURE: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_EXIT_FAILURE value: 1
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_READ: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_READ value: mbedtls_platform_std_nv_seed_read
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_WRITE: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_WRITE value: mbedtls_platform_std_nv_seed_write
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_FILE: Undefine
+    Platform: MBEDTLS_PLATFORM_STD_NV_SEED_FILE value: 
+    Platform: MBEDTLS_PLATFORM_CALLOC_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_CALLOC_MACRO value: calloc
+    Platform: MBEDTLS_PLATFORM_FREE_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_FREE_MACRO value: free
+    Platform: MBEDTLS_PLATFORM_EXIT_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_EXIT_MACRO value: exit
+    Platform: MBEDTLS_PLATFORM_SETBUF_MACRO: Define
+    Platform: MBEDTLS_PLATFORM_SETBUF_MACRO value: dummy_setbuf
+    Platform: MBEDTLS_PLATFORM_TIME_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_TIME_MACRO value: time
+    Platform: MBEDTLS_PLATFORM_TIME_TYPE_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_TIME_TYPE_MACRO value: time_t
+    Platform: MBEDTLS_PLATFORM_MS_TIME_TYPE_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_MS_TIME_TYPE_MACRO value: int64_t
+    Platform: MBEDTLS_PRINTF_MS_TIME: Undefine
+    Platform: MBEDTLS_PRINTF_MS_TIME value: PRId64
+    Platform: MBEDTLS_PLATFORM_FPRINTF_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_FPRINTF_MACRO value: fprintf
+    Platform: MBEDTLS_PLATFORM_PRINTF_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_PRINTF_MACRO value: printf
+    Platform: MBEDTLS_PLATFORM_SNPRINTF_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_SNPRINTF_MACRO value: snprintf
+    Platform: MBEDTLS_PLATFORM_VSNPRINTF_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_VSNPRINTF_MACRO value: vsnprintf
+    Platform: MBEDTLS_PLATFORM_NV_SEED_READ_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_NV_SEED_READ_MACRO value: mbedtls_platform_std_nv_seed_read
+    Platform: MBEDTLS_PLATFORM_NV_SEED_WRITE_MACRO: Undefine
+    Platform: MBEDTLS_PLATFORM_NV_SEED_WRITE_MACRO value: mbedtls_platform_std_nv_seed_write
+    General: MBEDTLS_CHECK_RETURN: Define
+    General: MBEDTLS_IGNORE_RETURN: Undefine
+    HMAC: MBEDTLS_PSA_HMAC_DRBG_MD_TYPE: Define
+    Platform: Alternate: MBEDTLS_PLATFORM_ZEROIZE_ALT: Undefine
+    Key Configuration: MBEDTLS_PSA_KEY_SLOT_COUNT: Undefine
+    Key Configuration: MBEDTLS_PSA_KEY_SLOT_COUNT value: 32
+    Platform: Alternate: MBEDTLS_PLATFORM_GMTIME_R_ALT: Undefine
+    Public Key Cryptography (PKC): ECC: MBEDTLS_ECDH_VARIANT_EVEREST_ENABLED: Undefine
+    General: MBEDTLS_PSA_CRYPTO_CONFIG: Undefine
+    
+  Module "MbedTLS Crypto Port (rm_psa_crypto)"
+  Module "RSIP-E31A Compatibility Mode"
+  Module "Post Quantum Cryptography (PQC)"
+  Module "Key Injection for PSA Crypto"
+  Module "LittleFS"
+    Custom lfs_util.h: 
+    Thread Safe: Disabled
+    Read Only: Disabled
+    Use Malloc: Enabled
+    Use Assert: Enabled
+    Debug Messages: Disabled
+    Warning Messages: Disabled
+    Error Messages: Disabled
+    Trace Messages: Disabled
+    Intrinsics: Enabled
+    Instance Name for STDIO wrapper: g_rm_littlefs0
+    
+  Module "LittleFS on Flash (rm_littlefs_flash)"
+    Parameter Checking: Default (BSP)
+    
+  Module "Flash (r_flash_hp)"
+    Parameter Checking: Default (BSP)
+    Code Flash Programming Enable: Disabled
+    Data Flash Programming Enable: Enabled
+    
+  Module "FreeRTOS Heap 2"
+  FreeRTOS
+    General: Custom FreeRTOSConfig.h: 
+    General: Use Preemption: Enabled
+    General: Use Port Optimised Task Selection: Disabled
+    General: Use Tickless Idle: Disabled
+    Hooks: Use Idle Hook: Enabled
+    Hooks: Use Malloc Failed Hook: Disabled
+    Hooks: Use Daemon Task Startup Hook: Disabled
+    Hooks: Use Tick Hook: Disabled
+    General: Cpu Clock Hz: SystemCoreClock
+    General: Tick Rate Hz: 1000
+    General: Max Priorities: 5
+    General: Minimal Stack Size: 128
+    General: Max Task Name Len: 16
+    Stats: Use Trace Facility: Disabled
+    Stats: Use Stats Formatting Functions: Disabled
+    General: Use 16-bit Ticks: Disabled
+    General: Idle Should Yield: Enabled
+    General: Use Task Notifications: Enabled
+    General: Task Notification Array Entries: 1
+    General: Use Mutexes: Disabled
+    General: Use Recursive Mutexes: Disabled
+    General: Use Counting Semaphores: Enabled
+    Hooks: Check For Stack Overflow: Disabled
+    General: Queue Registry Size: 10
+    General: Use Queue Sets: Disabled
+    General: Use Time Slicing: Disabled
+    General: Use Newlib Reentrant: Disabled
+    General: Enable Backward Compatibility: Disabled
+    General: Num Thread Local Storage Pointers: 5
+    General: Stack Depth Type: uint32_t
+    General: Message Buffer Length Type: size_t
+    Memory Allocation: Clear Memory on Free: Disabled
+    Memory Allocation: Support Static Allocation: Enabled
+    Memory Allocation: Support Dynamic Allocation: Disabled
+    Memory Allocation: Total Heap Size: 1024
+    Memory Allocation: Application Allocated Heap: Disabled
+    Stats: Generate Run Time Stats: Disabled
+    Timers: Use Timers: Enabled
+    Timers: Timer Task Priority: 3
+    Timers: Timer Queue Length: 10
+    Timers: Timer Task Stack Depth: 128
+    General: Library Max Syscall Interrupt Priority: Priority 1
+    General: Assert: assert(x)
+    General: Include Application Defined Privileged Functions: Disabled
+    Optional Functions: vTaskPrioritySet() Function: Enabled
+    Optional Functions: uxTaskPriorityGet() Function: Enabled
+    Optional Functions: vTaskDelete() Function: Enabled
+    Optional Functions: vTaskSuspend() Function: Enabled
+    Optional Functions: xResumeFromISR() Function: Enabled
+    Optional Functions: vTaskDelayUntil() Function: Enabled
+    Optional Functions: vTaskDelay() Function: Enabled
+    Optional Functions: xTaskGetSchedulerState() Function: Enabled
+    Optional Functions: xTaskGetCurrentTaskHandle() Function: Enabled
+    Optional Functions: uxTaskGetStackHighWaterMark() Function: Disabled
+    Optional Functions: xTaskGetIdleTaskHandle() Function: Disabled
+    Optional Functions: eTaskGetState() Function: Disabled
+    Optional Functions: xEventGroupSetBitFromISR() Function: Enabled
+    Optional Functions: xTimerPendFunctionCall() Function: Disabled
+    Optional Functions: xTaskAbortDelay() Function: Disabled
+    Optional Functions: xTaskGetHandle() Function: Disabled
+    Optional Functions: xTaskResumeFromISR() Function: Enabled
+    RA: Hardware Stack Monitor: Disabled
+    Logging: Print String Function: vLoggingPrint(x)
+    Logging: Logging Include Time and Task Name: Disabled
+    Logging: Debug Logging Name: Log Name
+    Logging: Logging Level: LOG_NONE
+    
+  HAL
+    Instance "g_ioport I/O Port (r_ioport)"
+      Name: g_ioport
+      1st Port ELC Trigger Source: Disabled
+      2nd Port ELC Trigger Source: Disabled
+      3rd Port ELC Trigger Source: Disabled
+      4th Port ELC Trigger Source: Disabled
+      Pin Configuration Name: g_bsp_pin_cfg
+      
+    Instance "FreeRTOS Port (rm_freertos_port)"
+    Instance "FreeRTOS Heap 2"
+  Thread "New Thread"
+    Symbol: new_thread0
+    Name: New Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Thread Context: NULL
+    Memory Allocation: Static
+    Allocate Secure Context: Enable
+    
+  Thread "New Thread"
+    Symbol: new_thread1
+    Name: New Thread
+    Stack size (bytes): 1024
+    Priority: 1
+    Thread Context: NULL
+    Memory Allocation: Static
+    Allocate Secure Context: Enable
+    
+    Instance "MCUboot"
+      Instance "MCUboot Port for RA (rm_mcuboot_port)"
+        Instance "MbedTLS (Crypto Only)"
+          Instance "MbedTLS Crypto Port (rm_psa_crypto)"
+            Instance "RSIP-E31A Compatibility Mode"
+              Instance "Key Injection for PSA Crypto"
+                General: Name: g_rsip_e31a_key_install
+                
+            Instance "Post Quantum Cryptography (PQC)"
+          Instance "LittleFS"
+            
+            Instance "LittleFS on Flash (rm_littlefs_flash)"
+              Name: g_rm_littlefs0
+              Read Size: 1
+              Program Size: 4
+              Memory Start Address: BSP_FEATURE_FLASH_DATA_FLASH_START
+              Block Size (bytes): 128
+              Block Count: (BSP_DATA_FLASH_SIZE_BYTES/128)
+              Block Cycles: 1024
+              Cache Size: 64
+              Lookahead Size: 16
+              
+              Instance "g_flash0 Flash (r_flash_hp)"
+                Name: g_flash0
+                Data Flash Background Operation: Disabled
+                Callback: NULL
+                Flash Ready Interrupt Priority: Disabled
+                Flash Error Interrupt Priority: Disabled
+                
+        Instance "g_flash1 Flash (r_flash_hp)"
+          Name: g_flash1
+          Data Flash Background Operation: Enabled
+          Callback: NULL
+          Flash Ready Interrupt Priority: Disabled
+          Flash Error Interrupt Priority: Disabled
+          
+      Instance "MCUboot logging"
